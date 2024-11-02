@@ -140,7 +140,7 @@ export default function Home() {
               save web pages or take screenshots as notes.
             </p>
             <button className="bg-[#4F9CF9] text-white px-10 py-4 rounded-lg flex items-center justify-center text-nowrap">
-              Let's Go
+              {"Let's Go"}
               <FaArrowRight className="ml-2" />
             </button>
           </div>
@@ -182,7 +182,7 @@ export default function Home() {
               plugins using the Extension API.
             </p>
             <button className="bg-[#4F9CF9] text-white px-10 py-4 rounded-lg flex items-center justify-center text-nowrap">
-              Let's Go
+              {"Let's Go"}
               <FaArrowRight className="ml-2" />
             </button>
           </div>
@@ -427,8 +427,8 @@ export default function Home() {
             </div>
             <p className="text-lg leading-[30px]">
               The app is open source and your notes are saved to an open format,
-              so you'll always have access to them. Uses End-To-End Encryption
-              (E2EE) to secure your notes and ensure no-one but yourself can
+              so {"you'll"} always have access to them. Uses End-To-End Encryption
+              {"(E2EE)"} to secure your notes and ensure no-one but yourself can
               access them.
             </p>
             <button className="bg-[#4F9CF9] text-white px-10 py-4 rounded-lg flex items-center justify-center text-nowrap">
