@@ -7,7 +7,7 @@ function Header() {
   return (
     <header className="flex justify-center w-full items-center py-4 bg-[#043873] text-white">
       <div className="flex flex-row items-center justify-between w-[1280px] flex-wrap">
-        <Image src="/images/logo.png" alt="logo" width={191} height={34} />
+        <Image src="/images/Logo.png" alt="logo" width={191} height={34} />
         <nav className="flex flex-row gap-[24px] flex-wrap">
           <ul className="flex flex-row items-center p-0 gap-9 h-[60px] flex-wrap">
             <li>Products<IoChevronDown className="ml-2 inline" /></li>

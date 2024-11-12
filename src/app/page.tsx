@@ -1,6 +1,9 @@
 import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
+import { FaApple } from "react-icons/fa";
+import { FaWindows } from "react-icons/fa6";
+import { BsAndroid2 } from "react-icons/bs";
 import {
   Carousel,
   CarouselContent,
@@ -554,22 +557,67 @@ export default function Home() {
               className="absolute -bottom-10 right-[300px] z-[-1] scale-[0.3] origin-right"
             />
           </div>
-          <Carousel className="w-full"
+          <Carousel className="w-full max-w-full"
             opts={{
               align: "start",
+              loop: true,
               slidesToScroll: 1,
               direction: "ltr",
-              containScroll: "trimSnaps",
+              dragFree: true,
             }}
           >
-            <CarouselContent className="w-full">
-              <CarouselItem className="basis-1/3 bg-yellow-300 box-border p-5">1</CarouselItem>
-              <CarouselItem className="basis-1/3 bg-green-300 box-border p-5">2</CarouselItem>
-              <CarouselItem className="basis-1/3 bg-red-300 box-border p-5">3</CarouselItem>
+            <CarouselContent className="m-0 p-0 -ml-5">
+              <CarouselItem key={1} className="basis-1/3 p-0 pl-5 box-border justify-start">
+                <div className="w-full bg-yellow-300">
+                  1
+                </div>
+              </CarouselItem>
+              <CarouselItem key={2} className="basis-1/3 p-0 pl-5 box-border justify-start">
+                <div className="w-full bg-red-300">
+                  1
+                </div>
+              </CarouselItem>
+              <CarouselItem key={3} className="basis-1/3 p-0 pl-5 box-border justify-start">
+                <div className="w-full bg-green-300">
+                  1
+                </div>
+              </CarouselItem>
+              <CarouselItem key={4} className="basis-1/3 p-0 pl-5 box-border justify-start">
+                <div className="w-full bg-blue-300">
+                  1
+                </div>
+              </CarouselItem>
             </CarouselContent>
             <CarouselPrevious className="left-[50%] translate-x-[calc(-100%-12px)] top-[100%] translate-y-[100%]" />
             <CarouselNext className="right-[50%] translate-x-[calc(100%+12px)] top-[100%] translate-y-[100%]" />
           </Carousel>
+        </div>
+      </div>
+      <div className="flex justify-center items-center w-full bg-[#043873]">
+        <div className="flex flex-col justify-center items-center pt-[140px] pb-8 px-8 gap-6">
+            <h1 className="text-[72px] text-white leading-[87.14px] font-bold text-center w-[75%]">
+              Try Whitepace today
+            </h1>
+          <div className="gap-0 flex flex-col justify-center items-center text-nowrap">
+          <p className="text-white text-center leading-[32px] text-2xl font-normal w-[100%]">
+          Get started for free.
+          </p>
+          <p className="text-white text-center leading-[32px] text-2xl font-normal w-[100%]">
+          Add your whole team as your needs grow.
+          </p>
+          </div>  
+          <button className="bg-[#4F9CF9] text-white px-10 py-4 rounded-lg flex items-center justify-center text-nowrap mt-8">
+            Try Taskey free
+            <FaArrowRight className="ml-2" />
+          </button>
+          <p className="text-white text-center leading-[32px] text-2xl font-normal">
+          On a big team? Contact sales
+          </p>
+          <div className="flex justify-center items-center gap-10">
+          <FaApple color="white" size={60} />
+          <FaWindows color="white" size={60} />
+          <BsAndroid2 color="white" size={60} />
+          </div>
         </div>
       </div>
     </main>
